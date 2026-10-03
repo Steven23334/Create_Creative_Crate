@@ -1,0 +1,23 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "block/block",
+  "textures": {
+    "crate": "creative_crate:block/crate_creative",
+    "particle": "creative_crate:block/crate_creative"
+  },
+  "elements": [
+    {
+      "name": "Crate",
+      "from": [1, 0, 1],
+      "to": [15, 14, 15],
+      "faces": {
+        "north": {"uv": [0.5, 8.5, 7.5, 15.5], "texture": "#crate"},
+        "east":  {"uv": [0.5, 8.5, 7.5, 15.5], "texture": "#crate"},
+        "south": {"uv": [0.5, 8.5, 7.5, 15.5], "texture": "#crate"},
+        "west":  {"uv": [0.5, 8.5, 7.5, 15.5], "texture": "#crate"},
+        "up":    {"uv": [8.5, 8.5, 15.5, 15.5], "texture": "#crate"},
+        "down":  {"uv": [8.5, 8.5, 15.5, 15.5], "texture": "#crate"}
+      }
+    }
+  ]
+}
