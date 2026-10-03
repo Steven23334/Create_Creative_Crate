@@ -1,3 +1,6 @@
 {
-  "block.creative_crate.creative_crate": "创造板条箱"
+  "block.creative_crate.creative_crate": "创造板条箱",
+
+  "gui.creative_crate.unlimited_supply": "无限供应",
+  "gui.creative_crate.click_to_replace": "单击物品以替换"
 }

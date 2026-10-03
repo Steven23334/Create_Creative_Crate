@@ -19,6 +19,10 @@ public class CreativeCrateHudRenderer {
 
     private static final double FRAME_HALF = 0.1875;
 
+    // 翻译键
+    public static final String KEY_UNLIMITED_SUPPLY = "gui.creative_crate.unlimited_supply";
+    public static final String KEY_CLICK_TO_REPLACE = "gui.creative_crate.click_to_replace";
+
     @SubscribeEvent
     public static void onRenderGui(RenderGuiEvent.Post event) {
         Minecraft mc = Minecraft.getInstance();
@@ -58,8 +62,8 @@ public class CreativeCrateHudRenderer {
         int centerX = screenW / 2;
         int baseY = screenH / 2 + 40;
 
-        Component line1 = Component.literal("无限供应");
-        Component line2 = Component.literal("单击物品以替换");
+        Component line1 = Component.translatable(KEY_UNLIMITED_SUPPLY);
+        Component line2 = Component.translatable(KEY_CLICK_TO_REPLACE);
 
         gui.drawCenteredString(font, line1, centerX, baseY, 0xFFFFFF);
         gui.drawCenteredString(font, line2, centerX, baseY + 12, 0xE0E0E0);

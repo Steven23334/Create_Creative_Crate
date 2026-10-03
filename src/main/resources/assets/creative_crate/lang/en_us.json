@@ -1,3 +1,6 @@
 {
-  "block.creative_crate.creative_crate": "Creative Crate"
+  "block.creative_crate.creative_crate": "Creative Crate",
+
+  "gui.creative_crate.unlimited_supply": "Unlimited Supply",
+  "gui.creative_crate.click_to_replace": "Click an item to replace"
 }

@@ -25,10 +25,9 @@ public class CreativeCrateBlockEntity extends BlockEntity implements Container {
         if (stack.isEmpty()) {
             this.providedStack = ItemStack.EMPTY;
         } else {
-            ItemStack copy = stack.copyWithCount(1);
             // 去掉耐久组件，避免复制出带损耗的模板
 //            copy.remove(net.minecraft.core.component.DataComponents.DAMAGE);
-            this.providedStack = copy;
+            this.providedStack = stack.copyWithCount(1);
         }
         setChanged();
         if (level != null && !level.isClientSide) {

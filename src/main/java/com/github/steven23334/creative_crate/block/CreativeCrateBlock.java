@@ -1,7 +1,6 @@
 package com.github.steven23334.creative_crate.block;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -57,10 +56,6 @@ public class CreativeCrateBlock extends Block implements EntityBlock {
             // 空手右击：清除绑定
             if (!level.isClientSide) {
                 crate.setProvidedStack(ItemStack.EMPTY);
-                player.displayClientMessage(
-                        Component.literal("已清除绑定"),
-                        true
-                );
             }
             return ItemInteractionResult.sidedSuccess(level.isClientSide);
         }
@@ -69,10 +64,6 @@ public class CreativeCrateBlock extends Block implements EntityBlock {
         if (!level.isClientSide) {
             ItemStack template = stack.copyWithCount(1);
             crate.setProvidedStack(template);
-            player.displayClientMessage(
-                    Component.literal("已绑定: " + template.getHoverName().getString()),
-                    true
-            );
         }
         return ItemInteractionResult.sidedSuccess(level.isClientSide);
     }
